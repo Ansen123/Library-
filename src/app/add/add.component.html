@@ -1,0 +1,28 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+           
+            <div class="row g-3">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="">Book Name</label>
+                    <input type="text" class="form-control"  name="bookName"  [(ngModel)]="bookName">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="">Author Name</label>
+                    <input type="text" class="form-control"  name="authorName"  [(ngModel)]="authorName">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="">Publish Year</label>
+                    <input type="text" class="form-control" name="publishYear"  [(ngModel)]="publishYear">
+                </div>
+               
+               
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button class="btn btn-primary" (click)="readvalues()">Submit</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
