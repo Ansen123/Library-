@@ -10,24 +10,21 @@ export class SearchComponent implements OnInit {
 
   constructor(private myapi:ApiService) {}
 
-    book=""
-   readvalue=()=>{
+  bookName=""
+   readvalues=()=>{
     let data={
-      "book":this.book
+      "bookName":this.bookName
     }
     console.log(data)
     this.myapi.searchBook(data).subscribe(
       (res)=>{
+        this.viewdata=res
 
       }
     )
    }
-   data:any=[{
-    "id": 8,
-    "bookName": "ab",
-    "authorName": "ad",
-    "publishYear": 2000
-}]
+   viewdata:any=[
+]
     
 
   ngOnInit(): void {
