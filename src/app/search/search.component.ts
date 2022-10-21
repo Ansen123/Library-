@@ -23,6 +23,14 @@ export class SearchComponent implements OnInit {
       }
     )
    }
+ updateBook=()=>{
+  this.myapi.updateBook(this.viewdata[0]).subscribe(
+    (res)=>{
+      alert("updated")
+    }
+  )
+ }
+
    viewdata:any=[
 ]
     
